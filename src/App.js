@@ -1,11 +1,19 @@
 
+import * as React from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter,Text} from '@chakra-ui/react'
 function App() {
   return (
+    <ChakraProvider>
     <div className=''>
-     <h1 className="pt-5 h-12 bg-green font-serif text-center font-bold text-2xl ">
-      Hello World
-     </h1>
+    <Card>
+  <CardBody>
+    <Text>View a summary of all your customers over the last month.</Text>
+  </CardBody>
+</Card>
     </div>
+  </ChakraProvider>
+    
   );
 }
 
