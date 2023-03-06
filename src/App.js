@@ -1,10 +1,11 @@
 
 import * as React from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
-import { Card, CardHeader, CardBody,Heading,Stack,StackDivider,Box, Text } from '@chakra-ui/react'
+
+import { Card, CardHeader, CardBody,Heading,Stack,StackDivider,Box, Text,Button } from '@chakra-ui/react'
 function App() {
+  const [state,setState]=React.useState();
   return (
-    <ChakraProvider>
+  
       <div className=''>
         <Card>
           <CardHeader>
@@ -20,6 +21,7 @@ function App() {
                 <Text pt='2' fontSize='sm'>
                   View a summary of all your clients over the last month.
                 </Text>
+                <Button colorScheme='blue'>Count</Button>
               </Box>
               <Box>
                 <Heading size='xs' textTransform='uppercase'>
@@ -41,8 +43,6 @@ function App() {
           </CardBody>
         </Card>
       </div>
-    </ChakraProvider>
-
   );
 }
 
